@@ -1,0 +1,35 @@
+body {
+	background-color: #1b262c;
+	text-align: center;
+}
+h1 {
+	font-family: "VT323", monospace;
+	color: #bbe1fa;
+	margin: 5%;
+	font-size: 8rem;
+}
+footer {
+	font-family: "Indie Flower", cursive;
+	color: #dbedf3;
+	margin-top: 5%;
+}
+.btn {
+	width: 200px;
+	height: 200px;
+	margin: 3%;
+	border: 10px solid black;
+	border-radius: 20%;
+	display: inline-block;
+}
+.green {
+	background-color: green;
+}
+.red {
+	background-color: red;
+}
+.yellow {
+	background-color: yellow;
+}
+.blue {
+	background-color: blue;
+}
