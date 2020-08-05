@@ -21,10 +21,7 @@ function changeColor(button) {
 }
 $(document).keydown(function () {
 	if (!started) {
-		button = randomButton();
-		generatedPattern.push(button);
-		changeColor(button);
-		makeSound(button);
+		nextSequence();
 		started = true;
 	}
 });
@@ -36,8 +33,33 @@ $(".btn").click(function () {
 	checkSequence(userPattern.length - 1);
 });
 function checkSequence(level) {
-	if (userPattern === generatedPattern) {
+	if (userPattern[level] === generatedPattern[level]) {
 		if (userPattern.length === generatedPattern.length) {
+			setTimeout(function () {
+				nextSequence();
+			}, 1000);
 		}
+	} else {
+		makeSound("wrong");
+		$("h1").text("Game Over press any key to restart!");
+		$("body").addClass("game-over");
+		setTimeout(function () {
+			$("body").removeClass("game-over");
+		}, 100);
+		game_over();
 	}
+}
+function nextSequence() {
+	userPattern = [];
+	level++;
+	$("h1").text("Level " + level);
+	var button = randomButton();
+	generatedPattern.push(button);
+	changeColor(button);
+	makeSound(button);
+}
+function game_over() {
+	level = 0;
+	started = false;
+	generatedPattern = [];
 }
