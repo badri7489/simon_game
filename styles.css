@@ -6,7 +6,7 @@ h1 {
 	font-family: "VT323", monospace;
 	color: #bbe1fa;
 	margin: 5%;
-	font-size: 8rem;
+	font-size: 5rem;
 }
 footer {
 	font-family: "Indie Flower", cursive;
@@ -42,6 +42,7 @@ footer {
 	opacity: 0.8;
 }
 #start_button {
+	margin-bottom: 1.5rem;
 	padding: 0.5% 4%;
 	font-size: 2rem;
 	font-family: "Indie Flower", cursive;
