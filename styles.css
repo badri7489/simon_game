@@ -13,7 +13,7 @@ footer {
 	color: #dbedf3;
 	margin-top: 5%;
 }
-.btn {
+.buton {
 	width: 200px;
 	height: 200px;
 	margin: 3%;
@@ -40,4 +40,10 @@ footer {
 .game-over {
 	background-color: red;
 	opacity: 0.8;
+}
+#start_button {
+	padding: 0.5% 4%;
+	font-size: 2rem;
+	font-family: "Indie Flower", cursive;
+	color: #dbedf3;
 }

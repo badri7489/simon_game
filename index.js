@@ -19,13 +19,13 @@ function changeColor(button) {
 		$("." + button).removeClass("pressed");
 	}, 100);
 }
-$(document).keydown(function () {
+$("#start_button").click(function () {
 	if (!started) {
 		nextSequence();
 		started = true;
 	}
 });
-$(".btn").click(function () {
+$(".buton").click(function () {
 	var chosen = $(this).attr("id");
 	userPattern.push(chosen);
 	changeColor(chosen);
@@ -41,7 +41,7 @@ function checkSequence(level) {
 		}
 	} else {
 		makeSound("wrong");
-		$("h1").text("Game Over press any key to restart!");
+		$("h1").text("Game Over press button to restart!");
 		$("body").addClass("game-over");
 		setTimeout(function () {
 			$("body").removeClass("game-over");
