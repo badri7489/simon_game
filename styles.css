@@ -14,6 +14,11 @@ footer {
 	color: #dbedf3;
 	margin-top: 5%;
 }
+h4 {
+	font-family: "VT323", monospace;
+	color: #dbedf3;
+	line-height: 1;
+}
 .buton {
 	margin: 3%;
 	display: inline-block;
